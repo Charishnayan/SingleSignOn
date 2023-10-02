@@ -22,7 +22,7 @@ public class ImportController {
 
    @PostMapping("/csv")
    public void importCsvData() throws IOException {
-       String csvUrl = "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2023-01-11/colony.csv";
+       String csvUrl = "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-01-11/colony.csv";
        colonyService.saveCsvDataToDatabase(csvUrl);
    }
 }
